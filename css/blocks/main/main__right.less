@@ -1,0 +1,79 @@
+// main: ../../style.less
+
+.right__panel {
+    width: 23%;
+    background: #1f1e1e;
+    height: 80vmax;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 1vmax;
+
+
+}
+
+.search {
+    width: 92%;
+    height: 7.5%;
+    border: solid .5vmin @black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: @black;
+    border-bottom-right-radius: .9vmin;
+    border-bottom-left-radius: .9vmin;
+    padding-bottom: 1vmin;
+
+}
+
+.calendar {
+    width: 92%;
+    height: 20%;
+    border: solid .5vmin @black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: @black;
+    border-bottom-right-radius: .9vmin;
+    border-bottom-left-radius: .9vmin;
+    padding-bottom: 1vmin;
+    
+    table td {
+    width: 4vmin;
+    height: 4vmin;
+}
+}
+
+#calendar2 {
+    width: 100%;
+    font: monospace;
+    font-size: 1.7vmin;
+    text-align: center;
+    color: #fff;
+}
+
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+    color: @grey-border
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1),
+#calendar2 thead tr:nth-child(1) td:nth-child(3){
+    color:@grey-border;
+}
+
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover,
+#calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+    cursor: pointer;
+    color:yellow;
+}
+
+
+.realdate {
+    border: .1vmin solid @black;
+    background: @button-back;
+}
+
+#calendar2 tbody td.today {
+    background: @blue;
+    color: #fff;
+}
+
+

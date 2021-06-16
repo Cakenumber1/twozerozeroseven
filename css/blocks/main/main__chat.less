@@ -1,0 +1,128 @@
+// main: ../../style.less
+
+.chat {
+    width: 92%;
+    height: 42.5%;
+    border: solid .5vmin @black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: @black;
+    border-bottom-right-radius: .9vmin;
+    border-bottom-left-radius: .9vmin;
+    padding-bottom: 1vmin;
+
+}
+
+
+.container {
+    width: 97%;
+    height: 97%;
+    margin: 0 auto;
+    border: solid .1vmin #ccc;
+    border-radius: .2vmin;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #1f1e1e;
+
+
+    .inputbox {
+        white-space: normal;
+        width: 80%;
+        height: 100%;
+        border: none;
+        font-size: 1vmin;
+        overflow-wrap: break-word;
+        color: white;
+        maxlength: 200;
+        background: @black;
+        border: solid 1vmin white;
+        border-width: .1vmin;
+        text-align: start
+    }
+
+    button {
+        background: @black;
+        height: 5vmin;
+        width: 7vmin;
+        color: white;
+        text-align: center;
+        font-size: 2vmin;
+    }
+}
+
+#counter__words {
+    font-size: 2vmin;
+    margin: 0;
+}
+
+
+.chat__container {
+    height: 75%;
+    overflow: auto;
+    border: solid .1vmin #ccc;
+    //border-radius: .2vmin;
+
+    //transform: rotate(180deg);
+    //direction: rtl;
+}
+
+.idk {
+    height: 10%;
+    border: solid .1vmin #ccc;
+}
+
+.chat__container::-webkit-scrollbar {
+    width: 1vmin;
+    /* width of the entire scrollbar */
+}
+
+.chat__container::-webkit-scrollbar-track {
+    background: white;
+    /* color of the tracking area */
+}
+
+.chat__container::-webkit-scrollbar-thumb {
+    background-color: #202020;
+    /* color of the scroll thumb */
+    border-radius: 2vmin;
+    /* roundness of the scroll thumb */
+    //border: 3px solid orange;
+    /* creates padding around scroll thumb */
+}
+
+
+
+.message {
+    border-bottom: solid .1vmin #ccc;
+    padding: 3vmin;
+    word-wrap: break-word;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    //transform: rotate(180deg);
+    //direction: ltr
+}
+
+
+.avatar {
+    float: left;
+}
+
+
+.datetime {
+    color: #999
+}
+
+
+
+.present {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .nickname {}
+}
+
+//<input class="inputbox" placeholder="" oninput="recount()">

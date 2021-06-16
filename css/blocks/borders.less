@@ -1,0 +1,51 @@
+// main: ../style.less
+
+.border__dark {
+    border: .2vmax solid transparent;
+    border-color: @black-border;
+}
+
+
+.border__grad {
+    border-radius: .3vmax;
+    box-shadow: 0vmax 0vmax .2vmax @grey-border, .15vmax -.15vmax .01vmax -.1vmax silver;
+}
+
+.border__grad__dark {
+    border-radius: .3vmax;
+    box-shadow: 0vmax 0vmax .2vmax black, .15vmax -.15vmax .01vmax -.1vmax silver;
+}
+
+.border__grad__blue{
+    border-radius: .3vmax;
+    box-shadow: 0vmax 0vmax .1vmax white, 0vmax -.15vmax .01vmax -.1vmax blue
+}
+
+.border__black{
+    box-shadow: 0vmax 0vmax .2vmax black;
+}
+
+div.nav__nav a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: .5vmax;
+    padding: .1vmax;
+    background: radial-gradient(ellipse at 100% 0%, white, #757575, #636363, #636363);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.border__t {
+    border-left: .2vmax solid;
+    border-color: @blue;
+    padding-left: .4vmax
+}
+
+

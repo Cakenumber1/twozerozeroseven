@@ -1,0 +1,276 @@
+<html lang="ru">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700&display=swap" rel="stylesheet">
+    <script src="js/chat.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" media="screen,projection,tv">
+    <title>ss</title>
+</head>
+
+<!-- Body -->
+<!-- Header -->
+<header>
+    <div class="header__top">
+        <a href="#"><img name="tw" src="./images/twitter_g2.svg" onMouseOver="window.document.images['tw'].src ='./images/twitter_g.svg';" onMouseOut="window.document.images['tw'].src ='./images/twitter_g2.svg';"></a>
+        <a href="#"><img name="fb" src="./images/facebook_g2.svg" onMouseOver="window.document.images['fb'].src ='./images/facebook_g.svg';" onMouseOut="window.document.images['fb'].src ='./images/facebook_g2.svg';"></a>
+        <a href="https://vk.com/cakenumber1"><img name="vk" src="./images/vk_g2.svg" onMouseOver="window.document.images['vk'].src ='./images/vk_g.svg';" onMouseOut="window.document.images['vk'].src ='./images/vk_g2.svg';"></a>
+    </div>
+    <div class="header__pic"></div>
+    <div class="header__bottom"></div>
+</header>
+
+<body>
+    <div class=" border__dark nav">
+        <div class="nav__nav">
+            <a href="#">
+                <div padding='0'>Главная</div>
+            </a>
+            <a href="#">
+                <div padding='0'>Форум</div>
+            </a>
+            <a href="#">
+                <div padding='0'>Новости</div>
+            </a>
+            <a href="#">
+                <div padding='0'>О сайте</div>
+            </a>
+            <a href="#">
+                <div padding='0'>Контакты</div>
+            </a>
+        </div>
+        <div class="nav__mid">
+            <div><img id="border" src="./images/smth2.svg" alt=""></div>
+        </div>
+
+        <div class="nav__user">
+            <div class="vis">
+                <table class="table1" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span>
+                                    <select name="select">
+                                        <option value="value1" selected>Username</option>
+                                        <option value="value2">Mail</option>
+                                    </select>
+                                </span>
+                            </td>
+                            <td><input type="text"></td>
+                            <td class="text_to_checkbox"><input type="checkbox">Auto Login</td>
+                            <td class="border__t"><a href="">Забыли пароль?</a></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" autocomplete="off"></td>
+                            <td><button class="login" type="submit" onclick=""><em>Login</em></button></td>
+                            <td class="border__t"><a href=""><b>Регистрация</b></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="logged invis">
+                <img class="mypic border__black" src="./images/user.svg">
+
+                <table class="table2" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td><b>Админпанель</b></td>
+                            <td>Сообщения</td>
+                            <td><b>Добавить новость</b></td>
+                        </tr>
+                        <tr>
+                            <td>Мой профиль</td>
+                            <td>RSS</td>
+                            <td>Пользователи</td>
+                        </tr>
+                        <tr>
+                            <td>Администраторы</td>
+                            <td>Новое на форуме</td>
+                            <td class="login">Выход</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <script src="./js/logging.js"></script>
+        </div>
+
+    </div>
+
+    <div class="border__dark news__nav">
+        <div class="news__back border__grad">
+            <div class="news__block border__grad">
+                <div class="title">
+                    <img src="./images/icon_res.svg" alt="">
+                    <h2>Последние статьи</h2>
+                </div>
+                <div class="list">
+                    <ul type="disk">
+                        <li>
+                            <a class="link" href="#">Неавтоматический тренажер для...</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#">Одноразовая маска</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#">Барсучий жир</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#">Шапочка из фольги</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#">Шапочка из фольги</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="news__back border__grad">
+            <div class="news__block border__grad">
+                <div class="title">
+                    <img src="./images/icon_clock.svg" alt="">
+                    <h2>Наше время</h2>
+                </div>
+                <div class="clock">
+                    <div class="hour">
+                        <div class="hr" id="hr"></div>
+                    </div>
+                    <div class="min">
+                        <div class="mn" id="mn">
+                        </div>
+
+                    </div>
+                    <div class="sec">
+                        <div class="sc" id="sc">
+                        </div>
+                        <script src="js/clock.js">
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news__back border__grad">
+            <div class="news__block border__grad">
+                <div class="title">
+                    <img src="./images/icon_star.svg" alt="">
+                    <h2>Самые популярные</h2>
+                </div>
+                <div class="list">
+                    <ul type="disk">
+                        <li>
+                            <a class="link" href="#">Неавтоматический тренажер для...</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#">Одноразовая маска</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#">Барсучий жир</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#">Шапочка из фольги</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#">Шапочка из фольги</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+    <main>
+        <div class="border__dark left__panel">
+            <div class=inner></div>
+        </div>
+        <div class="border__dark mid">
+            <div class="mid__slider">
+                <section class="slider">
+                    <div class="carousel carousel-main" data-flickity='{ "asNavFor": ".carousel-nav", "contain": true, "pageDots": false, "wrapAround": true, "draggable": false, "prevNextButtons": false, "cellSelector": ".carousel-cell" }'>
+                        <div class="static-banner">Текст
+                            <a class="border__grad__blue" href="#">кнопка</a>
+                        </div>
+                        <div class="carousel-cell">1</div>
+                        <div class="carousel-cell">2</div>
+                        <div class="carousel-cell">3</div>
+                        <div class="carousel-cell">4</div>
+                        <div class="carousel-cell">5</div>
+                    </div>
+
+                    <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false, "draggable": false}'>
+                        <div class="carousel-cell"></div>
+                        <div class="carousel-cell"></div>
+                        <div class="carousel-cell"></div>
+                        <div class="carousel-cell"></div>
+                        <div class="carousel-cell"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="border__dark right__panel ">
+            <template id="message">
+                <div class="present">
+                    <img class="avatar" src="">
+                    <p class="nickname"></p>
+                </div>
+                <div class="datetime"></div>
+                <p class="message__text">A message text</p>
+            </template>
+            <div class="border__grad__dark main__title">
+                <h3>Мини-чат</h3>
+            </div>
+            <div class="chat border__black">
+                <div class="container">
+                    <div class="chat__container">
+                    </div>
+                    <div class="idk">
+                        1 2 3 4 5
+                    </div>
+                    <div style="display: flex; height: 15%">
+                        <textarea class="inputbox" id="" cols="30" rows="4" maxlength="80" oninput="recount()"></textarea>
+                        <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-between">
+                            <p id="counter__words">80</p>
+                            <button id="post" onclick="post()">ОК</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border__grad__dark main__title">
+                <h3>Поиск</h3>
+            </div>
+            <div class="search border__black"></div>
+            <div class="border__grad__dark main__title">
+                <h3>Rfktylfhm</h3>
+            </div>
+            <div class="calendar border__black">
+                <table id="calendar2">
+                    <thead>
+                        <tr>
+                            <td>«</td>
+                            <td colspan="5"></td>
+                            <td>»</td>
+                        </tr>
+                        <tr>
+                            <td class="realdate">Пн</td>
+                            <td class="realdate">Вт</td>
+                            <td class="realdate">Ср</td>
+                            <td class="realdate">Чт</td>
+                            <td class="realdate">Пт</td>
+                            <td class="realdate">Сб</td>
+                            <td class="realdate">Вс</td>
+                        </tr>
+                    <tbody></tbody>
+                </table>
+                <script src="js/calendar.js"></script>
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

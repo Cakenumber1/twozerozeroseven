@@ -1,0 +1,93 @@
+// main: ../../style.less
+
+.clock {
+    width: 20vmin;
+    height: 20vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/clock2.svg) no-repeat center;
+    background-size: 100%
+}
+
+.clock:before {
+    //точка
+    content: '';
+    position: absolute;
+    width: 1.2vmin;
+    height: 1.2vmin;
+    background: @text-main;
+    border-radius: 50%;
+    z-index: 15;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec {
+    position: relative;
+}
+
+.clock .hour,
+.hr {
+    height: .1vmin;
+}
+
+.clock .min,
+.mn {
+    height: .1vmin;
+}
+
+.clock .sec,
+.sc {
+    height: .1vmin;
+}
+
+.hr,
+.mn,
+.sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hr:before {
+    content: '';
+    position: absolute;
+    width: .35vmin;
+    height: 3.5vmin;
+    background: darkblue;
+    z-index: 10;
+    border-radius: 0 0 10vmin 10vmin;
+}
+
+.mn:before {
+    content: '';
+    position: absolute;
+    width: .34vmin;
+    height: 4.7vmin;
+    background: orange;
+    z-index: 11;
+    border-radius: 0 0 10vmin 10vmin;
+}
+
+.sc:before {
+    content: '';
+    position: absolute;
+    width: .3vmin;
+    height: 5.9vmin;
+    background: yellow;
+    z-index: 12;
+    border-radius: 0 0 10vmin 10vmin;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

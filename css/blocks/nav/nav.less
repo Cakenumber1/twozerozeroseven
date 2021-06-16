@@ -1,0 +1,59 @@
+// main: ../../style.less
+
+.nav {
+    background-color: @black;
+    margin-top: .8%;
+    margin-bottom: 0;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    
+    a {
+    color: @text-main;
+    text-decoration: none;
+
+    &:hover {
+        transform:
+            translateY(-5px);
+    }
+
+    &:hover,
+    &:hover * {
+        color: yellow;
+    }
+}
+}
+
+.nav__nav {
+    display: flex;
+    width: 42%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 1vmax
+}
+
+.nav__user {
+    width: 42%;
+    padding-left: 1vmax;
+    padding-right: 0;
+}
+
+div.nav__nav a {
+    background-color: @button-back;
+    border-radius: .5vmax;
+    position: relative;
+    padding-left: 1vmax;
+    padding-right: 1vmax;
+    padding-top: .5vmax;
+    padding-bottom: .5vmax;
+
+}
+
+.nav__mid {
+    width: 16%;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center
+}
+
